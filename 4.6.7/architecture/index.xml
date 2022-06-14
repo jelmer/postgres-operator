@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/</link>
+    <description>Recent content in Architecture on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.6.7/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/overview/</guid>
+      <description>The goal of the Crunchy PostgreSQL Operator is to provide a means to quickly get your applications up and running on PostgreSQL for both development and production environments. To understand how the PostgreSQL Operator does this, we want to give you a tour of its architecture, with explains both the architecture of the PostgreSQL Operator itself as well as recommended deployment models for PostgreSQL in production!
+Crunchy PostgreSQL Operator Architecture The Crunchy PostgreSQL Operator extends Kubernetes to provide a higher-level abstraction for rapid creation and management of PostgreSQL clusters.</description>
+    </item>
+    
+    <item>
+      <title>Provisioning</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/provisioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/provisioning/</guid>
+      <description>What happens when the Crunchy PostgreSQL Operator creates a PostgreSQL cluster?
+First, an entry needs to be added to the Pgcluster CRD that provides the essential attributes for maintaining the definition of a PostgreSQL cluster. These attributes include:
+ Cluster name The storage and resource definitions to use References to any secrets required, e.g. ones to the pgBackRest repository High-availability rules Which sidecars and ancillary services are enabled, e.g. pgBouncer, pgMonitor  After the Pgcluster CRD entry is set up, the PostgreSQL Operator handles various tasks to ensure that a healthy PostgreSQL cluster can be deployed.</description>
+    </item>
+    
+    <item>
+      <title>Disaster Recovery</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/disaster-recovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/disaster-recovery/</guid>
+      <description>When using the PostgreSQL Operator, the answer to the question &amp;ldquo;do you take backups of your database&amp;rdquo; is automatically &amp;ldquo;yes!&amp;rdquo;
+The PostgreSQL Operator uses the open source pgBackRest backup and restore utility that is designed for working with databases that are many terabytes in size. As described in the Provisioning section, pgBackRest is enabled by default as it permits the PostgreSQL Operator to automate some advanced as well as convenient behaviors, including:</description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/monitoring/</guid>
+      <description>While having high availability and disaster recovery systems in place helps in the event of something going wrong with your PostgreSQL cluster, monitoring helps you anticipate problems before they happen. Additionally, monitoring can help you diagnose and resolve additional issues that may not result in downtime, but cause degraded performance.
+There are many different ways to monitor systems within Kubernetes, including tools that come with Kubernetes itself. This is by no means to be a comprehensive on how to monitor everything in Kubernetes, but rather what the PostgreSQL Operator provides to give you an out-of-the-box monitoring solution.</description>
+    </item>
+    
+    <item>
+      <title>Namespace Management</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/namespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/namespace/</guid>
+      <description>Kubernetes Namespaces and the PostgreSQL Operator The PostgreSQL Operator leverages Kubernetes Namespaces to react to actions taken within a Namespace to keep its PostgreSQL clusters deployed as requested. Early on, the PostgreSQL Operator was scoped to a single namespace and would only watch PostgreSQL clusters in that Namspace, but since version 4.0, it has been expanded to be able to manage PostgreSQL clusters across multiple namespaces.
+The following provides more information about how the PostgreSQL Operator works with namespaces, and presents several deployment patterns that can be used to deploy the PostgreSQL Operator.</description>
+    </item>
+    
+    <item>
+      <title>Lifecycle Events</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/eventing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/eventing/</guid>
+      <description>Operator Eventing The Operator creates events from the various life-cycle events going on within the Operator logic and driven by pgo users as they interact with the Operator and as Postgres clusters come and go or get updated.
+Event Watching There is a pgo CLI command:
+pgo watch alltopic  This command connects to the event stream and listens on a topic for event real-time. The command will not complete until the pgo user enters ctrl-C.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL Containers</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/postgres-operator-containers-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/postgres-operator-containers-overview/</guid>
+      <description>PostgreSQL Operator Containers Overview The PostgreSQL Operator orchestrates a series of PostgreSQL and PostgreSQL related containers containers that enable rapid deployment of PostgreSQL, including administration and monitoring tools in a Kubernetes environment. The PostgreSQL Operator supports PostgreSQL 9.5+ with multiple PostgreSQL cluster deployment strategies and a variety of PostgreSQL related extensions and tools enabling enterprise grade PostgreSQL-as-a-Service. A full list of the containers supported by the PostgreSQL Operator is provided below.</description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/storage-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/storage-overview/</guid>
+      <description>Storage and the PostgreSQL Operator The PostgreSQL Operator allows for a variety of different configurations of persistent storage that can be leveraged by the PostgreSQL instances or clusters it deploys.
+The PostgreSQL Operator works with several different storage types, HostPath, Network File System(NFS), and Dynamic storage.
+ Hostpath is the simplest storage and useful for single node testing.
+ NFS provides the ability to do single and multi-node testing.</description>
+    </item>
+    
+    <item>
+      <title>User &amp; Roles</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/users-role-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/users-role-overview/</guid>
+      <description>User Roles in the PostgreSQL Operator The PostgreSQL Operator, when used in conjunction with the associated PostgreSQL Containers and Kubernetes, provides you with the ability to host your own open source, Kubernetes native PostgreSQL-as-a-Service infrastructure.
+In installing, configuring and operating the PostgreSQL Operator as a PostgreSQL-as-a-Service capability, the following user roles will be required:
+   Role Applicable Component Authorized Privileges and Functions Performed     Platform Admininistrator (Privileged User) PostgreSQL Operator The Platform Admininistrator is able to control all aspects of the PostgreSQL Operator functionality, including: provisioning and scaling clusters, adding PostgreSQL Administrators and PostgreSQL Users to clusters, setting PostgreSQL cluster security privileges, managing other PostgreSQL Operator users, and more.</description>
+    </item>
+    
+    <item>
+      <title>Tablespaces</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/tablespaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/tablespaces/</guid>
+      <description>A Tablespace is a PostgreSQL feature that is used to store data on a volume that is different from the primary data directory. While most workloads do not require them, tablespaces can be particularly helpful for larger data sets or utilizing particular hardware to optimize performance on a particular PostgreSQL object (a table, index, etc.). Some examples of use cases for tablespaces include:
+ Partitioning larger data sets across different volumes Putting data onto archival systems Utilizing hardware (or a storage class) for a particular database Storing sensitive data on a volume that supports transparent data-encryption (TDE)  and others.</description>
+    </item>
+    
+    <item>
+      <title>pgAdmin 4</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/pgadmin4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.7/architecture/pgadmin4/</guid>
+      <description>pgAdmin 4 is a popular graphical user interface that makes it easy to work with PostgreSQL databases from both a desktop or web-based client. With its ability to manage and orchestrate changes for PostgreSQL users, the PostgreSQL Operator is a natural partner to keep a pgAdmin 4 environment synchronized with a PostgreSQL environment.
+The PostgreSQL Operator lets you deploy a pgAdmin 4 environment alongside a PostgreSQL cluster and keeps users&amp;rsquo; database credentials synchronized.</description>
+    </item>
+    
+  </channel>
+</rss>
