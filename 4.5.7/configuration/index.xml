@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/</link>
+    <description>Recent content in Configuration on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.5.7/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compatibility Requirements</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/compatibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/compatibility/</guid>
+      <description>Container Dependencies The Operator depends on the Crunchy Containers and there are version dependencies between the two projects. Below are the operator releases and their dependent container release. For reference, the Postgres and PgBackrest versions for each container release are also listed.
+   Operator Release Container Release Postgres PgBackrest Version     4.5.7 4.5.7 13.7 2.29     12.11 2.29     11.</description>
+    </item>
+    
+    <item>
+      <title>Configuration Resources</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/configuration/</guid>
+      <description>The operator is template-driven; this makes it simple to configure both the client and the operator.
+conf Directory The Operator is configured with a collection of files found in the conf directory. These configuration files are deployed to your Kubernetes cluster when the Operator is deployed. Changes made to any of these configuration files currently require a redeployment of the Operator on the Kubernetes cluster.
+The server components of the Operator include Role Based Access Control resources which need to be created a single time by a privileged Kubernetes user.</description>
+    </item>
+    
+    <item>
+      <title>PGO YAML</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/pgo-yaml-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/pgo-yaml-configuration/</guid>
+      <description>pgo.yaml Configuration The pgo.yaml file contains many different configuration settings as described in this section of the documentation.
+The pgo.yaml file is broken into major sections as described below:
+Cluster    Setting Definition     BasicAuth If set to &amp;quot;true&amp;quot; will enable Basic Authentication. If set to &amp;quot;false&amp;quot;, will allow a valid Operator user to successfully authenticate regardless of the value of the password provided for Basic Authentication.</description>
+    </item>
+    
+    <item>
+      <title>TLS</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/tls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.5.7/configuration/tls/</guid>
+      <description>TLS Configuration Should you desire to alter the default TLS settings for the Postgres Operator, you can set the following variables as described below.
+Server Settings To disable TLS and make an unsecured connection on port 8080 instead of connecting securely over the default port, 8443, set:
+Bash environment variables
+export DISABLE_TLS=true export PGO_APISERVER_PORT=8080	 Or inventory variables if using Ansible
+pgo_disable_tls=&amp;#39;true&amp;#39; pgo_apiserver_port=8080 To disable TLS verifcation, set the follwing as a Bash environment variable</description>
+    </item>
+    
+  </channel>
+</rss>
