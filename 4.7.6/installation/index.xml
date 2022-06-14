@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/</link>
+    <description>Recent content in Installation on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.7.6/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prerequisites</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/prerequisites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/prerequisites/</guid>
+      <description>Prerequisites The following is required prior to installing PGO.
+Environment PGO is tested in the following environments:
+ Kubernetes v1.13+ Red Hat OpenShift v3.11+ Red Hat OpenShift v4.4+ Amazon EKS VMWare Enterprise PKS 1.3+ IBM Cloud Pak Data  IBM Cloud Pak Data If you install PGO, which comes with Crunchy PostgreSQL for Kubernetes, on IBM Cloud Pak Data, please note the following additional requirements:
+ Cloud Pak Data Version 2.</description>
+    </item>
+    
+    <item>
+      <title>Install PGO the Postgres Operator</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/postgres-operator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/postgres-operator/</guid>
+      <description>PGO: Postgres Operator Installer Quickstart If you believe that all the default settings in the installation manifest work for you, you can take a chance by running the manifest directly from the repository:
+kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/kubectl/postgres-operator.yml  However, we still advise that you read onward to see how to properly configure the PostgreSQL Operator.
+Overview PGO comes with a container called pgo-deployer which handles a variety of lifecycle actions for the Postgres Operator, including:</description>
+    </item>
+    
+    <item>
+      <title>Install &#34;pgo&#34; Client</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/pgo-client/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/pgo-client/</guid>
+      <description>Install the PostgreSQL Operator (pgo) Client The following will install and configure the pgo client on all systems. For the purpose of these instructions it&amp;rsquo;s assumed that PGO: the Postgres Operator from Crunchy Data is already deployed.
+Prerequisites  For Kubernetes deployments: kubectl configured to communicate with Kubernetes For OpenShift deployments: oc configured to communicate with OpenShift  To authenticate with the PGO API:
+ Client CA Certificate Client TLS Certificate Client Key pgouser file containing &amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;  All of the requirements above should be obtained from an administrator who installed PGO.</description>
+    </item>
+    
+    <item>
+      <title>Configuration Reference</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/configuration/</guid>
+      <description>PGO Installer Configuration When installing PGO, the Postgres Operator you have many configuration options, these options are listed in this section.
+General Configuration These variables affect the general configuration of the PostgreSQL Operator.
+   Name Default Required Description     archive_mode true Required Set to true enable archive logging on all newly created clusters.   archive_timeout 60 Required Set to a value in seconds to configure the timeout threshold for archiving.</description>
+    </item>
+    
+  </channel>
+</rss>

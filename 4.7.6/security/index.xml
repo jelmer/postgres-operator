@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RBAC Configuration on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.7.6/security/</link>
+    <description>Recent content in RBAC Configuration on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.7.6/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuration of PostgreSQL Operator RBAC</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/security/configure-postgres-operator-rbac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/security/configure-postgres-operator-rbac/</guid>
+      <description>PostreSQL Operator RBAC The conf/postgres-operator/pgorole file is read at start up time when the operator is deployed to the Kubernetes cluster. This file defines the PostgreSQL Operator roles whereby PostgreSQL Operator API users can be authorized.
+The conf/postgres-operator/pgouser file is read at start up time also and contains username, password, role, and namespace information as follows:
+username:password:pgoadmin: pgouser1:password:pgoadmin:pgouser1 pgouser2:password:pgoadmin:pgouser2 pgouser3:password:pgoadmin:pgouser1,pgouser2 readonlyuser:password:pgoreader:  The format of the pgouser server file is:</description>
+    </item>
+    
+    <item>
+      <title>Installation of PostgreSQL Operator RBAC</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/security/install-postgres-operator-rbac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/security/install-postgres-operator-rbac/</guid>
+      <description>Installation of PostgreSQL Operator RBAC For a list of the RBAC required to install the PostgreSQL Operator, please view the postgres-operator.yml file:
+https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/kubectl/postgres-operator.yml
+The first step is to install the PostgreSQL Operator RBAC configuration. This can be accomplished by running:
+make installrbac  This script will install the PostreSQL Operator Custom Resource Definitions, CRD’s and creates the following RBAC resources on your Kubernetes cluster:
+   Setting Definition     Custom Resource Definitions pgclusters    pgpolicies    pgreplicas    pgtasks    pgupgrades   Cluster Roles (cluster-roles.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL Operator API Encryption Configuration</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/security/api-encryption-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/security/api-encryption-configuration/</guid>
+      <description>Configuring Encryption of PostgreSQL Operator API Connection The PostgreSQL Operator REST API connection is encrypted with keys stored in the pgo.tls Secret.
+The pgo.tls Secret can be generated prior to starting the PostgreSQL Operator or you can let the PostgreSQL Operator generate the Secret for you if the Secret does not exist.
+Adjust the default keys to meet your security requirements using your own keys. The pgo.tls Secret is created when you run:</description>
+    </item>
+    
+  </channel>
+</rss>

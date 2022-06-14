@@ -17,7 +17,7 @@
       
       <guid>https://crunchydata.github.io/postgres-operator/stable/configuration/compatibility/</guid>
       <description>Container Dependencies The Operator depends on the Crunchy Containers and there are version dependencies between the two projects. Below are the operator releases and their dependent container release. For reference, the Postgres and PgBackrest versions for each container release are also listed.
-   Operator Release Container Release Postgres PgBackrest Version     4.7.5 4.7.5 13.6 2.33     12.10 2.33     11.</description>
+   Operator Release Container Release Postgres PgBackrest Version     4.7.6 4.7.6 13.7 2.33     12.11 2.33     11.</description>
     </item>
     
     <item>
@@ -114,7 +114,7 @@ username:password:pgoadmin: pgouser1:password:pgoadmin:pgouser1 pgouser2:passwor
       
       <guid>https://crunchydata.github.io/postgres-operator/stable/security/install-postgres-operator-rbac/</guid>
       <description>Installation of PostgreSQL Operator RBAC For a list of the RBAC required to install the PostgreSQL Operator, please view the postgres-operator.yml file:
-https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.5/installers/kubectl/postgres-operator.yml
+https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/kubectl/postgres-operator.yml
 The first step is to install the PostgreSQL Operator RBAC configuration. This can be accomplished by running:
 make installrbac  This script will install the PostreSQL Operator Custom Resource Definitions, CRD’s and creates the following RBAC resources on your Kubernetes cluster:
    Setting Definition     Custom Resource Definitions pgclusters    pgpolicies    pgreplicas    pgtasks    pgupgrades   Cluster Roles (cluster-roles.</description>
@@ -137,7 +137,7 @@ Adjust the default keys to meet your security requirements using your own keys. 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://crunchydata.github.io/postgres-operator/stable/upgrade/manual/upgrade35/</guid>
-      <description>Upgrading the Crunchy PostgreSQL Operator from Version 3.5 to 4.7.5 This section will outline the procedure to upgrade a given cluster created using PostgreSQL Operator 3.5.x to PostgreSQL Operator version 4.7.5. This version of the PostgreSQL Operator has several fundamental changes to the existing PGCluster structure and deployment model. Most notably, all PGClusters use the new Crunchy PostgreSQL HA container in place of the previous Crunchy PostgreSQL containers. The use of this new container is a breaking change from previous versions of the Operator.</description>
+      <description>Upgrading the Crunchy PostgreSQL Operator from Version 3.5 to 4.7.6 This section will outline the procedure to upgrade a given cluster created using PostgreSQL Operator 3.5.x to PostgreSQL Operator version 4.7.6. This version of the PostgreSQL Operator has several fundamental changes to the existing PGCluster structure and deployment model. Most notably, all PGClusters use the new Crunchy PostgreSQL HA container in place of the previous Crunchy PostgreSQL containers. The use of this new container is a breaking change from previous versions of the Operator.</description>
     </item>
     
     <item>
@@ -146,7 +146,7 @@ Adjust the default keys to meet your security requirements using your own keys. 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://crunchydata.github.io/postgres-operator/stable/upgrade/manual/upgrade4/</guid>
-      <description>Manual PostgreSQL Operator 4 Upgrade Procedure Below are the procedures for upgrading to version 4.7.5 of the Crunchy PostgreSQL Operator using the Bash or Ansible installation methods. This version of the PostgreSQL Operator has several fundamental changes to the existing PGCluster structure and deployment model. Most notably for those upgrading from 4.1 and below, all PGClusters use the new Crunchy PostgreSQL HA container in place of the previous Crunchy PostgreSQL containers.</description>
+      <description>Manual PostgreSQL Operator 4 Upgrade Procedure Below are the procedures for upgrading to version 4.7.6 of the Crunchy PostgreSQL Operator using the Bash or Ansible installation methods. This version of the PostgreSQL Operator has several fundamental changes to the existing PGCluster structure and deployment model. Most notably for those upgrading from 4.1 and below, all PGClusters use the new Crunchy PostgreSQL HA container in place of the previous Crunchy PostgreSQL containers.</description>
     </item>
     
     <item>
@@ -209,7 +209,7 @@ The below guide covers many of the common operations that are required when mana
       
       <guid>https://crunchydata.github.io/postgres-operator/stable/installation/postgres-operator/</guid>
       <description>PGO: Postgres Operator Installer Quickstart If you believe that all the default settings in the installation manifest work for you, you can take a chance by running the manifest directly from the repository:
-kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.5/installers/kubectl/postgres-operator.yml  However, we still advise that you read onward to see how to properly configure the PostgreSQL Operator.
+kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/kubectl/postgres-operator.yml  However, we still advise that you read onward to see how to properly configure the PostgreSQL Operator.
 Overview PGO comes with a container called pgo-deployer which handles a variety of lifecycle actions for the Postgres Operator, including:</description>
     </item>
     
@@ -220,7 +220,7 @@ Overview PGO comes with a container called pgo-deployer which handles a variety 
       
       <guid>https://crunchydata.github.io/postgres-operator/stable/installation/metrics/postgres-operator-metrics/</guid>
       <description>PostgreSQL Operator Monitoring Installer Quickstart If you believe that all the default settings in the installation manifest work for you, you can take a chance by running the metrics manifest directly from the repository:
-kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.5/installers/metrics/kubectl/postgres-operator-metrics.yml  Note that in OpenShift and CodeReady Containers you will need to set the disable_fsgroup to true attribute to true if you are using the restricted Security Context Constraint (SCC).</description>
+kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/metrics/kubectl/postgres-operator-metrics.yml  Note that in OpenShift and CodeReady Containers you will need to set the disable_fsgroup to true attribute to true if you are using the restricted Security Context Constraint (SCC).</description>
     </item>
     
     <item>
@@ -340,6 +340,18 @@ ansible-playbook -i /path/to/inventory.yaml --tags=uninstall --ask-become-pass m
 First, it is recommended to use the playbooks tagged with the same version of the Metrics infratructure currently deployed.
 With the correct playbooks acquired and prerequisites satisfied, simply run the following command:
 ansible-playbook -i /path/to/inventory.yaml --tags=uninstall-metrics main.</description>
+    </item>
+    
+    <item>
+      <title>4.7.6</title>
+      <link>https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/</guid>
+      <description>Crunchy Data announces the release of PGO, the Postgres Operator 4.7.6.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.7.6 release includes the following software versions upgrades:
+ PostgreSQL versions 13.7, 12.11, 11.16, and 10.21 are now available. PostGIS version 3.1.4 is now available. The pg_partman extension is now at version 4.6.1. The TimescaleDB extension is now at version 2.6.1.  Fixes  The pgo test command now properly displays broken or pending replicas.</description>
     </item>
     
     <item>

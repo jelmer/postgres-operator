@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansible on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/</link>
+    <description>Recent content in Ansible on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prerequisites</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/prerequisites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/prerequisites/</guid>
+      <description>Prerequisites The following is required prior to installing Crunchy PostgreSQL Operator using Ansible:
+ postgres-operator playbooks source code for the target version Ansible 2.9.0+  Kubernetes Installs  Kubernetes v1.11+ Cluster admin privileges in Kubernetes kubectl configured to communicate with Kubernetes  OpenShift Installs  OpenShift v3.09+ Cluster admin privileges in OpenShift oc configured to communicate with OpenShift  Installing from a Windows Host If the Crunchy PostgreSQL Operator is being installed from a Windows host the following are required:</description>
+    </item>
+    
+    <item>
+      <title>Installing Ansible</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/installing-ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/installing-ansible/</guid>
+      <description>Installing Ansible on Linux, macOS or Windows Ubuntu Subsystem To install Ansible on Linux or macOS, see the official documentation provided by Ansible.
+Install Google Cloud SDK (Optional) If Crunchy PostgreSQL Operator is going to be installed in a Google Kubernetes Environment the Google Cloud SDK is required.
+To install the Google Cloud SDK on Linux or macOS, see the official Google Cloud documentation.
+When installing the Google Cloud SDK on the Windows Ubuntu Subsystem, run the following commands to install:</description>
+    </item>
+    
+    <item>
+      <title>Installing PostgreSQL Operator</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/installing-operator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/installing-operator/</guid>
+      <description>Installing The following assumes the proper prerequisites are satisfied we can now install the PostgreSQL Operator.
+The commands should be run in the directory where the Crunchy PostgreSQL Operator playbooks are stored. See the installers/ansible directory in the Crunchy PostgreSQL Operator project for the inventory file, values file, main playbook and ansible roles.
+Installing on Linux On a Linux host with Ansible installed we can run the following command to install the PostgreSQL Operator:</description>
+    </item>
+    
+    <item>
+      <title>Updating PostgreSQL Operator</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/updating-operator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/updating-operator/</guid>
+      <description>Updating Updating the Crunchy PostgreSQL Operator is essential to the lifecycle management of the service. Using the update flag will:
+ Update and redeploy the operator deployment Recreate configuration maps used by operator Remove any deprecated objects Allow administrators to change settings configured in the values.yaml Reinstall the pgo client if a new version is specified  The following assumes the proper prerequisites are satisfied we can now update the PostgreSQL Operator.</description>
+    </item>
+    
+    <item>
+      <title>Uninstalling PostgreSQL Operator</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/uninstalling-operator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.6/installation/other/ansible/uninstalling-operator/</guid>
+      <description>Uninstalling PostgreSQL Operator The following assumes the proper prerequisites are satisfied we can now uninstall the PostgreSQL Operator.
+First, it is recommended to use the playbooks tagged with the same version of the PostgreSQL Operator currently deployed.
+With the correct playbooks acquired and prerequisites satisfied, simply run the following command:
+ansible-playbook -i /path/to/inventory.yaml --tags=uninstall --ask-become-pass main.yml Deleting pgo Client If variable pgo_client_install is set to true in the values.yaml file, the pgo client will also be removed when uninstalling.</description>
+    </item>
+    
+  </channel>
+</rss>

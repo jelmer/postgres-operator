@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>4.7.6</title>
+      <link>https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/</guid>
+      <description>Crunchy Data announces the release of PGO, the Postgres Operator 4.7.6.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.7.6 release includes the following software versions upgrades:
+ PostgreSQL versions 13.7, 12.11, 11.16, and 10.21 are now available. PostGIS version 3.1.4 is now available. The pg_partman extension is now at version 4.6.1. The TimescaleDB extension is now at version 2.6.1.  Fixes  The pgo test command now properly displays broken or pending replicas.</description>
+    </item>
+    
+    <item>
       <title>4.7.5</title>
       <link>https://crunchydata.github.io/postgres-operator/stable/releases/4.7.5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

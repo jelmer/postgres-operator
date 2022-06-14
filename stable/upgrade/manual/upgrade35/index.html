@@ -1140,6 +1140,13 @@
 
       </div>
         <ul>
+      <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/" class="dd-item">
+        <div>
+          <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/">
+            4.7.6
+          </a>
+        </div>
+    </li>
       <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.5/" class="dd-item">
         <div>
           <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.5/">
@@ -1429,22 +1436,22 @@
     
     
 
-<h2 id="upgrading-the-crunchy-postgresql-operator-from-version-3-5-to-hahahugoshortcode-s0-hbhb">Upgrading the Crunchy PostgreSQL Operator from Version 3.5 to 4.7.5</h2>
+<h2 id="upgrading-the-crunchy-postgresql-operator-from-version-3-5-to-hahahugoshortcode-s0-hbhb">Upgrading the Crunchy PostgreSQL Operator from Version 3.5 to 4.7.6</h2>
 
-<p>This section will outline the procedure to upgrade a given cluster created using PostgreSQL Operator 3.5.x to PostgreSQL Operator version 4.7.5. This version of the PostgreSQL Operator has several fundamental changes to the existing PGCluster structure and deployment model. Most notably, all PGClusters use the new Crunchy PostgreSQL HA container in place of the previous Crunchy PostgreSQL containers. The use of this new container is a breaking change from previous versions of the Operator.</p>
+<p>This section will outline the procedure to upgrade a given cluster created using PostgreSQL Operator 3.5.x to PostgreSQL Operator version 4.7.6. This version of the PostgreSQL Operator has several fundamental changes to the existing PGCluster structure and deployment model. Most notably, all PGClusters use the new Crunchy PostgreSQL HA container in place of the previous Crunchy PostgreSQL containers. The use of this new container is a breaking change from previous versions of the Operator.</p>
 
 <h4 id="crunchy-postgresql-high-availability-containers">Crunchy PostgreSQL High Availability Containers</h4>
 
-<p>Using the PostgreSQL Operator 4.7.5 requires replacing your <code>crunchy-postgres</code> and <code>crunchy-postgres-gis</code> containers with the <code>crunchy-postgres-ha</code> and <code>crunchy-postgres-gis-ha</code> containers respectively. The underlying PostgreSQL installations in the container remain the same but are now optimized for Kubernetes environments to provide the new high-availability functionality.</p>
+<p>Using the PostgreSQL Operator 4.7.6 requires replacing your <code>crunchy-postgres</code> and <code>crunchy-postgres-gis</code> containers with the <code>crunchy-postgres-ha</code> and <code>crunchy-postgres-gis-ha</code> containers respectively. The underlying PostgreSQL installations in the container remain the same but are now optimized for Kubernetes environments to provide the new high-availability functionality.</p>
 
 <p>A major change to this container is that the PostgreSQL process is now managed by Patroni. This allows a PostgreSQL cluster that is deployed by the PostgreSQL Operator to manage its own uptime and availability, to elect a new leader in the event of a downtime scenario, and to automatically heal after a failover event.</p>
 
-<p>When creating your new clusters using version 4.7.5 of the PostgreSQL Operator, the <code>pgo create cluster</code> command will automatically use the new <code>crunchy-postgres-ha</code> image if the image is unspecified. If you are creating a PostGIS enabled cluster, please be sure to use the updated image name and image tag, as with the command:</p>
+<p>When creating your new clusters using version 4.7.6 of the PostgreSQL Operator, the <code>pgo create cluster</code> command will automatically use the new <code>crunchy-postgres-ha</code> image if the image is unspecified. If you are creating a PostGIS enabled cluster, please be sure to use the updated image name and image tag, as with the command:</p>
 
-<pre><code>pgo create cluster mygiscluster --ccp-image=crunchy-postgres-gis-ha --ccp-image-tag=centos8-13.6-3.1-4.7.5
+<pre><code>pgo create cluster mygiscluster --ccp-image=crunchy-postgres-gis-ha --ccp-image-tag=ubi8-13.7-3.1-4.7.6
 </code></pre>
 
-<p>Where <code>13.6</code> is the PostgreSQL version, <code>3.1</code> is the PostGIS version and <code>4.7.5</code> is the PostgreSQL Operator version.
+<p>Where <code>13.7</code> is the PostgreSQL version, <code>3.1</code> is the PostGIS version and <code>4.7.6</code> is the PostgreSQL Operator version.
 Please note, no tag validation will be performed and additional steps may be required to upgrade your PostGIS extension implementation. For more information on PostGIS upgrade considerations, please see
 <a href="https://access.crunchydata.com/documentation/postgis/latest/postgis_installation.html#upgrading">PostGIS Upgrade Documentation</a>.</p>
 
@@ -1461,7 +1468,7 @@ Please note, no tag validation will be performed and additional steps may be req
 
 <h5 id="step-1">Step 1</h5>
 
-<p>Create a new Linux user with the same permissions as the existing user used to install the Crunchy PostgreSQL Operator. This is necessary to avoid any issues with environment variable differences between 3.5 and 4.7.5.</p>
+<p>Create a new Linux user with the same permissions as the existing user used to install the Crunchy PostgreSQL Operator. This is necessary to avoid any issues with environment variable differences between 3.5 and 4.7.6.</p>
 
 <h5 id="step-2">Step 2</h5>
 
@@ -1525,7 +1532,7 @@ $COROOT/deploy/remove-crd.sh
 
 <h5 id="step-6">Step 6</h5>
 
-<p>Log in as your new Linux user and install the 4.7.5 PostgreSQL Operator as described in the <a href="https://crunchydata.github.io/postgres-operator/stable/installation/other/bash/">Bash Installation Procedure</a>.</p>
+<p>Log in as your new Linux user and install the 4.7.6 PostgreSQL Operator as described in the <a href="https://crunchydata.github.io/postgres-operator/stable/installation/other/bash/">Bash Installation Procedure</a>.</p>
 
 <p>Be sure to add the existing namespace to the Operator&rsquo;s list of watched namespaces (see the <a href="https://crunchydata.github.io/postgres-operator/stable/architecture/namespace/">Namespace</a> section of this document for more information) and make sure to avoid overwriting any existing data storage.</p>
 
@@ -1533,7 +1540,7 @@ $COROOT/deploy/remove-crd.sh
 
 <h5 id="step-7">Step 7</h5>
 
-<p>Once the Operator is installed and functional, create a new 4.7.5 cluster matching the cluster details recorded in Step 1. Be sure to use the primary PVC name (also noted in Step 1) and the same major PostgreSQL version as was used previously. This will allow the new clusters to utilize the existing PVCs.</p>
+<p>Once the Operator is installed and functional, create a new 4.7.6 cluster matching the cluster details recorded in Step 1. Be sure to use the primary PVC name (also noted in Step 1) and the same major PostgreSQL version as was used previously. This will allow the new clusters to utilize the existing PVCs.</p>
 
 <p>NOTE: If you have existing pgBackRest backups stored that you would like to have available in the upgraded cluster, you will need to follow the <a href="#pgbackrest-repo-pvc-renaming">PVC Renaming Procedure</a>.</p>
 
@@ -1544,7 +1551,7 @@ $COROOT/deploy/remove-crd.sh
 
 <h5 id="step-8">Step 8</h5>
 
-<p>Manually update the old leftover Secrets to use the new label as defined in 4.7.5:</p>
+<p>Manually update the old leftover Secrets to use the new label as defined in 4.7.6:</p>
 
 <pre><code>kubectl -n &lt;namespace&gt; label secret/&lt;clustername&gt;-postgres-secret pg-cluster=&lt;clustername&gt; -n &lt;namespace&gt;
 kubectl -n &lt;namespace&gt; label secret/&lt;clustername&gt;-primaryuser-secret pg-cluster=&lt;clustername&gt; -n &lt;namespace&gt;
