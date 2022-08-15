@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manual Upgrades on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.5.8/upgrade/manual/</link>
+    <description>Recent content in Manual Upgrades on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.5.8/upgrade/manual/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Manual Upgrade - Operator 3.5</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.5.8/upgrade/manual/upgrade35/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.5.8/upgrade/manual/upgrade35/</guid>
+      <description>Upgrading the Crunchy PostgreSQL Operator from Version 3.5 to 4.5.8 This section will outline the procedure to upgrade a given cluster created using PostgreSQL Operator 3.5.x to PostgreSQL Operator version 4.5.8. This version of the PostgreSQL Operator has several fundamental changes to the existing PGCluster structure and deployment model. Most notably, all PGClusters use the new Crunchy PostgreSQL HA container in place of the previous Crunchy PostgreSQL containers. The use of this new container is a breaking change from previous versions of the Operator.</description>
+    </item>
+    
+    <item>
+      <title>Manual Upgrade - Operator 4</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.5.8/upgrade/manual/upgrade4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.5.8/upgrade/manual/upgrade4/</guid>
+      <description>Manual PostgreSQL Operator 4 Upgrade Procedure Below are the procedures for upgrading to version 4.5.8 of the Crunchy PostgreSQL Operator using the Bash or Ansible installation methods. This version of the PostgreSQL Operator has several fundamental changes to the existing PGCluster structure and deployment model. Most notably for those upgrading from 4.1 and below, all PGClusters use the new Crunchy PostgreSQL HA container in place of the previous Crunchy PostgreSQL containers.</description>
+    </item>
+    
+  </channel>
+</rss>
