@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Release Notes on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/</link>
+    <description>Recent content in Release Notes on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.6.8/releases/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>4.6.8</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.8/</guid>
+      <description>Crunchy Data announces the release of PGO, the Postgres Operator 4.6.8.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.6.8 release includes the following software versions upgrades:
+ PostgreSQL versions 13.8, 12.12, 11.17, and 10.22 are now available. PgBouncer is now at version 1.17. The pg_partman extension is now at version 4.6.0. The TimescaleDB extension is now at version 2.7.1.  </description>
+    </item>
+    
+    <item>
+      <title>4.6.7</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.7/</guid>
+      <description>Crunchy Data announces the release of PGO, the Postgres Operator 4.6.7.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.6.7 release includes the following software versions upgrades:
+ PostgreSQL versions 14.3, 13.7, 12.11, 11.16, and 10.21 are now available. PostGIS version 3.1.4 is now available. The pg_partman extension is now at version 4.6.1. The TimescaleDB extension is now at version 2.6.1.  </description>
+    </item>
+    
+    <item>
+      <title>4.6.6</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.6/</guid>
+      <description> Crunchy Data announces the release of PGO, the Postgres Operator 4.6.6.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.6.6 release includes the following software versions upgrades:
+ PostgreSQL versions 13.6, 12.10, 11.15 and 10.20 are now available.  Changes  The version of Go utilized to build yq is now aligned with all other Go binaries.  </description>
+    </item>
+    
+    <item>
+      <title>4.6.5</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.5/</guid>
+      <description>Crunchy Data announces the release of PGO, the Postgres Operator 4.6.5.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.6.5 release includes the following software versions upgrades:
+ PostgreSQL versions 13.5, 12.9, 11.14, 10.19 and 9.6.24 are now available. The pgnodemx extension is now at version 1.0.6. pgBouncer is now at version 1.16.1 The pgAudit extension is now at version 1.6.1  Changes  Update automatic OpenShift detection logic to look specifically for the presence of the SecurityContextConstraint API.</description>
+    </item>
+    
+    <item>
+      <title>4.6.4</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.4/</guid>
+      <description>Crunchy Data announces the release of PGO, the Postgres Operator 4.6.4.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.6.4 release includes the following software versions upgrades:
+ PostgreSQL is updated to 13.4, 12.8, 11.13, 10.18, and 9.6.23. pgaudit_analyze is now at 1.0.8. set_user is now at version 2.0.1.  Changes  On using the built-in upgrade tool, the pg-pod-anti-affinity is now removed from the userlabels section of a pgclusters.</description>
+    </item>
+    
+    <item>
+      <title>4.6.3</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.3/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.6.3 on May 25, 2021.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.6.3 release includes the following software versions upgrades:
+ PostgreSQL is now at 13.3, 12.7, 11.12, 10.17, and 9.6.22. pgMonitor is now at 4.4-1.  Changes  Allow for the PGOADMIN_USERNAME, PGOADMIN_PASSWORD, PGOADMIN_ROLENAME credential bootstrap variables to be overriden as part of the OLM and development install process.</description>
+    </item>
+    
+    <item>
+      <title>4.6.2</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.2/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.6.2 on March 22, 2021.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.6.2 release includes the following software versions upgrades:
+ Patroni is now at version 2.0.2. pgBouncer for CentOS 8 / UBI 8 is rebuilt to use the libc for its async DNS backend.  PostgreSQL Operator is tested against Kubernetes 1.17 - 1.</description>
+    </item>
+    
+    <item>
+      <title>4.6.1</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.1/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.6.1 on February 16, 2021.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.6.1 release includes the following software versions upgrades:
+ PostgreSQL is now at versions 13.2, 12.6, 11.11, 10.16, and 9.6.21.  PostgreSQL Operator is tested against Kubernetes 1.17 - 1.20, OpenShift 3.11, OpenShift 4.4+, Google Kubernetes Engine (GKE), Amazon EKS, Microsoft AKS, and VMware Enterprise PKS 1.</description>
+    </item>
+    
+    <item>
+      <title>4.6.0</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.6.0/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.6.0 on January 22, 2021. You can get started with the PostgreSQL Operator with the following commands:
+kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.6.0/installers/kubectl/postgres-operator.yml  The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+The PostgreSQL Operator 4.6.0 release includes the following software versions upgrades:
+ pgBackRest is now at version 2.31 pgnodemx is now at version 1.</description>
+    </item>
+    
+    <item>
+      <title>4.5.1</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.5.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.5.1/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.5.1 on November 13, 2020.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.5.1 release includes the following software versions upgrades:
+ PostgreSQL is now at versions 13.1, 12.5, 11.10, 10.15, 9.6.20, and 9.5.24. Patroni is now at version 2.0.1. PL/Perl can now be used in the PostGIS-enabled containers.  Changes  Simplified creation of a PostgreSQL cluster from a pgcluster resource.</description>
+    </item>
+    
+    <item>
+      <title>4.5.0</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.5.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.5.0/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.5.0 on October 2, 2020.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+The PostgreSQL Operator 4.5.0 release includes the following software versions upgrades:
+ Add support for PostgreSQL 13. pgBackRest is now at version 2.29. postgres_exporter is now at version 0.8.0 pgMonitor support is now at 4.4 pgnodemx is now at version 1.0.1 wal2json is now at version 2.</description>
+    </item>
+    
+    <item>
+      <title>4.4.1</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.4.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.4.1/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.4.1 on August 17, 2020.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+The PostgreSQL Operator 4.4.1 release includes the following software versions upgrades:
+ The PostgreSQL containers now use versions 12.4, 11.9, 10.14, 9.6.19, and 9.5.23  PostgreSQL Operator is tested with Kubernetes 1.13 - 1.18, OpenShift 3.11+, OpenShift 4.3+, Google Kubernetes Engine (GKE), and VMware Enterprise PKS 1.</description>
+    </item>
+    
+    <item>
+      <title>4.4.0</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.4.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.4.0/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.4.0 on July 17, 2020.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+The PostgreSQL Operator 4.4.0 release includes the following software versions upgrades:
+ PostGIS 3.0 is now supported. There is now a manual upgrade path between PostGIS containers. pgRouting is now included in the PostGIS containers. pgBackRest is now at version 2.27. pgBouncer is now at version 1.</description>
+    </item>
+    
+    <item>
+      <title>4.3.3</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.3.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.3.3/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.3.3 on August 17, 2020.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+The PostgreSQL Operator 4.3.3 release includes the following software versions upgrades:
+ The PostgreSQL containers now use versions 12.4, 11.9, 10.14, 9.6.19, and 9.5.23 pgBouncer is now at version 1.14.  PostgreSQL Operator is tested with Kubernetes 1.13 - 1.18, OpenShift 3.11+, OpenShift 4.</description>
+    </item>
+    
+    <item>
+      <title>4.3.2</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.3.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.3.2/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.3.2 on May 27, 2020.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+Version 4.3.2 of the PostgreSQL Operator contains bug fixes to the installer container and changes to how CPU/memory requests and limits can be specified.
+PostgreSQL Operator is tested with Kubernetes 1.13 - 1.18, OpenShift 3.11+, OpenShift 4.3+, Google Kubernetes Engine (GKE), and VMware Enterprise PKS 1.</description>
+    </item>
+    
+    <item>
+      <title>4.3.1</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.3.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.3.1/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.3.1 on May 18, 2020.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+The PostgreSQL Operator 4.3.1 release includes the following software versions upgrades:
+ The PostgreSQL containers now use versions 12.3, 11.8, 10.13, 9.6.18, and 9.5.22  PostgreSQL Operator is tested with Kubernetes 1.13 - 1.18, OpenShift 3.11+, OpenShift 4.3+, Google Kubernetes Engine (GKE), and VMware Enterprise PKS 1.</description>
+    </item>
+    
+    <item>
+      <title>4.3.0</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.3.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.3.0/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.3.0 on May 1, 2020.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+The PostgreSQL Operator 4.3.0 release includes the following software versions upgrades:
+ The PostgreSQL containers now use versions 12.2, 11.7, 10.12, 9.6.17, and 9.5.21  This now includes support for using the JIT compilation feature introduced in PostgreSQL 11  PostgreSQL containers now support PL/Python3 pgBackRest is now at version 2.</description>
+    </item>
+    
+    <item>
+      <title>4.2.2</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.2.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.2.2/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.2.2 on February, 18, 2020.
+The PostgreSQL Operator 4.2.2 release provides bug fixes and continued support to the 4.2 release line.
+This release includes updates for several packages supported by the PostgreSQL Operator, including:
+ The PostgreSQL containers now use versions 12.2, 11.7, 10.12, 9.6.17, and 9.5.21 The PostgreSQL containers now support PL/Python3 Patroni is updated to version 1.6.4  The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.</description>
+    </item>
+    
+    <item>
+      <title>4.2.1</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.2.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.2.1/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.2.1 on January, 16, 2020.
+The PostgreSQL Operator 4.2.1 provides bug fixes and continued support to the 4.2 release line.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator is tested with Kubernetes 1.13+, OpenShift 3.11+, Google Kubernetes Engine (GKE), and VMware Enterprise PKS 1.3+.
+Fixes  Ensure Pod labels are updated after failover (#1218) Fix for scheduled tasks to continue executing even after pgo delete schedule is called (#1215) Ensure pgo restore carries through the --node-label to the new primary (#1206) Fix for displaying incorrect replica names with the --query flag on pgo scaledown/pgo failover after a failover occurred Fix for default CA exclusion for the Windows-based pgo client Fix a race condition where the pgo-rmdata job could fail when doing its final pass on deleting PVCs.</description>
+    </item>
+    
+    <item>
+      <title>4.2.0</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.2.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.2.0/</guid>
+      <description>Crunchy Data announces the release of the PostgreSQL Operator 4.2.0 on December, 31, 2019.
+The focus of the 4.2.0 release of the PostgreSQL Operator was on the resiliency and uptime of the PostgreSQL clusters that the PostgreSQL Operator manages, with an emphasis on high-availability and removing the Operator from being a single-point-of-failure in the HA process. This release introduces support for a distributed-consensus based high-availability approach using Kubernetes distributed consensus store as the backing, which, in other words, allows for the PostgreSQL clusters to manage their own availability and not the PostgreSQL Operator.</description>
+    </item>
+    
+    <item>
+      <title>4.1.2</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.1.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.1.2/</guid>
+      <description>This release was to update the supported PostgreSQL versions to 12.2, 11.7, 10.12, 9.6.17, and 9.5.21</description>
+    </item>
+    
+    <item>
+      <title>4.1.1</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.1.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.1.1/</guid>
+      <description>Crunchy Data announces the release of PostgreSQL Operator 4.1.1 on November, 22, 2019.
+Postgres Operator 4.1.1 provide bug fixes and continued support to Postgres Operator 4.1 as well as continued compatibility with newer versions of PostgreSQL.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+The Postgres Operator 4.1.1 release includes the following software versions upgrades:
+ The PostgreSQL now uses versions 12.1, 11.6, 10.11, 9.6.16, and 9.</description>
+    </item>
+    
+    <item>
+      <title>4.1.0</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.1.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/releases/4.1.0/</guid>
+      <description>Crunchy Data announces the release of PostgreSQL Operator 4.1 on October 15, 2019.
+In addition to new features, such as dynamic namespace manage by the Operator and the ability to subscribe to a stream of lifecycle events that occur with PostgreSQL clusters, this release adds many new features and bug fixes.
+The Postgres Operator 4.1 release also includes the following software versions upgrades:
+ The PostgreSQL now uses versions 11.</description>
+    </item>
+    
+  </channel>
+</rss>

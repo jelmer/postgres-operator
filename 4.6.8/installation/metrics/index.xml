@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PostgreSQL Operator Monitoring on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.6.8/installation/metrics/</link>
+    <description>Recent content in PostgreSQL Operator Monitoring on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.6.8/installation/metrics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monitoring Prerequisites</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/installation/metrics/metrics-prerequisites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/installation/metrics/metrics-prerequisites/</guid>
+      <description>Prerequisites The following is required prior to installing PostgreSQL Operator Monitoring.
+Environment PostgreSQL Operator Monitoring is tested in the following environments:
+ Kubernetes v1.13+ Red Hat OpenShift v3.11+ Red Hat OpenShift v4.3+ VMWare Enterprise PKS 1.3+  Application Ports The PostgreSQL Operator Monitoring installer deploys different services as needed to support PostgreSQL Operator Monitoring collection and monitoring. Below is a list of the applications and their default Service ports.</description>
+    </item>
+    
+    <item>
+      <title>Install PostgreSQL Operator Monitoring</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/installation/metrics/postgres-operator-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/installation/metrics/postgres-operator-metrics/</guid>
+      <description>PostgreSQL Operator Monitoring Installer Quickstart If you believe that all the default settings in the installation manifest work for you, you can take a chance by running the metrics manifest directly from the repository:
+kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.6.8/installers/metrics/kubectl/postgres-operator-metrics.yml  Note that in OpenShift and CodeReady Containers you will need to set the disable_fsgroup to true attribute to true if you are using the restricted Security Context Constraint (SCC).</description>
+    </item>
+    
+    <item>
+      <title>Monitoring Configuration Reference</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/installation/metrics/metrics-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/installation/metrics/metrics-configuration/</guid>
+      <description>PostgreSQL Operator Monitoring Installer Configuration When installing the PostgreSQL Operator Monitoring infrastructure you have various configuration options available, which are defined below.
+General Configuration These variables affect the general configuration of PostgreSQL Operator Monitoring.
+   Name Default Required Description     alertmanager_log_level info  Set the log level for Alertmanager logging.   alertmanager_service_type ClusterIP Required How to expose the Alertmanager service.   alertmanager_storage_access_mode ReadWriteOnce Required Set to the access mode used by the configured storage class for Alertmanager persistent volumes.</description>
+    </item>
+    
+  </channel>
+</rss>

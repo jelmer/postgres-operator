@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contributing on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/</link>
+    <description>Recent content in Contributing on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.6.8/contributing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development Environment</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/developer-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/developer-setup/</guid>
+      <description>The PostgreSQL Operator is an open source project hosted on GitHub.
+This guide is intended for those wanting to build the Operator from source or contribute via pull requests.
+Prerequisites The target development host for these instructions is a RHEL 8 host. Others operating systems are possible, however we do not support building or running the Operator on others at this time.
+Environment Variables The following environment variables are expected by the steps in this guide:</description>
+    </item>
+    
+    <item>
+      <title>Updating Documentation</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/documentation-updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/documentation-updates/</guid>
+      <description>Documentation The documentation website is generated using Hugo.
+Hosting Hugo Locally (Optional) If you would like to build the documentation locally, view the official Installing Hugo guide to set up Hugo locally.
+You can then start the server by running the following commands -
+cd $PGOROOT/docs/ hugo server  The local version of the Hugo server is accessible by default from localhost:1313. Once you&amp;rsquo;ve run hugo server, that will let you interactively make changes to the documentation as desired and view the updates in real-time.</description>
+    </item>
+    
+    <item>
+      <title>Submitting Issues</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/issues/</guid>
+      <description>If you would like to submit an feature / issue for us to consider please submit an to the official GitHub Repository.
+If you would like to work the issue, please add that information in the issue so that we can confirm we are not already working no need to duplicate efforts.
+If you have any question you can submit a Support - Question and Answer issue and we will work with you on how you can get more involved.</description>
+    </item>
+    
+    <item>
+      <title>Submitting Pull Requests</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/pull-requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/contributing/pull-requests/</guid>
+      <description>So you decided to submit an issue and work it. Great! Let&amp;rsquo;s get it merged in to the codebase. The following will go a long way to helping get the fix merged in quicker.
+ Create a pull request from your fork to the master branch. Update the checklists in the Pull Request Description. Reference which issues this Pull Request is resolving.  </description>
+    </item>
+    
+  </channel>
+</rss>

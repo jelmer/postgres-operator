@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced Topics on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/</link>
+    <description>Recent content in Advanced Topics on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.6.8/advanced/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crunchy Postgres Exporter</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/crunchy-postgres-exporter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/crunchy-postgres-exporter/</guid>
+      <description>The crunchy-postgres-exporter container provides real time metrics about the PostgreSQL database via an API. These metrics are scraped and stored by a Prometheus time-series database and are then graphed and visualized through the open source data visualizer Grafana.
+The crunchy-postgres-exporter container uses pgMonitor for advanced metric collection. It is required that the crunchy-postgres-ha container has the PGMONITOR_PASSWORD environment variable to create the appropriate user (ccp_monitoring) to collect metrics.
+Custom queries to collect metrics can be specified by the user.</description>
+    </item>
+    
+    <item>
+      <title>Custom Configuration</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/custom-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/custom-configuration/</guid>
+      <description>Custom PostgreSQL Configuration Users and administrators can specify a custom set of PostgreSQL configuration files to be used when creating a new PostgreSQL cluster. The configuration files you can change include -
+ postgres-ha.yaml setup.sql  Different configurations for PostgreSQL might be defined for the following -
+ OLTP types of databases OLAP types of databases High Memory Minimal Configuration for Development Project Specific configurations Special Security Requirements  Global ConfigMap If you create a configMap called pgo-custom-pg-config with any of the above files within it, new clusters will use those configuration files when setting up a new database instance.</description>
+    </item>
+    
+    <item>
+      <title>Multi-Zone Cloud Considerations</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/multi-zone-design-considerations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/multi-zone-design-considerations/</guid>
+      <description>Considerations for PostgreSQL Operator Deployments in Multi-Zone Cloud Environments Overview When using the PostgreSQL Operator in a Kubernetes cluster consisting of nodes that span multiple zones, special consideration must be taken to ensure all pods and the associated volumes re scheduled and provisioned within the same zone.
+Given that a pod is unable mount a volume that is located in another zone, any volumes that are dynamically provisioned must be provisioned in a topology-aware manner according to the specific scheduling requirements for the pod.</description>
+    </item>
+    
+    <item>
+      <title>Rest API</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/direct-api-calls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/advanced/direct-api-calls/</guid>
+      <description>Direct API Calls The API can also be accessed by interacting directly with the API server. This can be done by making curl calls to POST or GET information from the server. In order to make these calls you will need to provide certificates along with your request using the --cacert, --key, and --cert flags. Next you will need to provide the username and password for the RBAC along with a header that includes the content type and the --insecure flag.</description>
+    </item>
+    
+  </channel>
+</rss>

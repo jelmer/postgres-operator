@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/</link>
+    <description>Recent content in Tutorial on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/getting-started/</guid>
+      <description>Installation If you have not installed PGO, the Postgres Operator, yet, we recommend you take a look at our quickstart or the installation sections.
+Customizing an Installation How to customize a PGO installation is a lengthy topic. The details are covered in the installation section, as well as a list of all the configuration variables available.
+Setup the pgo Client This tutorial will be using the pgo client to interact with the Postgres Operator.</description>
+    </item>
+    
+    <item>
+      <title>Create a Postgres Cluster</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/create-cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/create-cluster/</guid>
+      <description>If you came here through the quickstart, you may have already created a cluster, in which case, feel free to skip ahead, or read onward for a more in depth look into cluster creation!
+Create a PostgreSQL Cluster Creating a cluster is simple with the pgo create cluster command:
+pgo create cluster hippo  with output similar to:
+created cluster: hippo workflow id: 25c870a0-5d27-42c2-be00-92f0ba8768e7 database name: hippo users: username: testuser password: securerandomlygeneratedpassword  This creates a new PostgreSQL cluster named hippo with a database in it named hippo.</description>
+    </item>
+    
+    <item>
+      <title>Connect to a Postgres Cluster</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/connect-cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/connect-cluster/</guid>
+      <description>Naturally, once the PostgreSQL cluster is created, you may want to connect to it. You can get the credentials of the users of the cluster using the pgo show user command, i.e.:
+pgo show user hippo  yields output similar to:
+CLUSTER USERNAME PASSWORD EXPIRES STATUS ERROR ------- -------- -------------------------------- ------- ------ ----- hippo testuser securerandomlygeneratedpassword never ok  If you need to get the password of one of the system or privileged accounts, you will need to use the --show-system-accounts flag, i.</description>
+    </item>
+    
+    <item>
+      <title>Customize a Postgres Cluster</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/customize-cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/customize-cluster/</guid>
+      <description>The PostgreSQL Operator makes it very easy and quick to create a cluster, but there are possibly more customizations you want to make to your cluster. These include:
+ Resource allocations (e.g. Memory, CPU, PVC size) Sidecars (e.g. Monitoring, pgBouncer, pgAdmin 4) High Availability (e.g. adding replicas) Specifying specific PostgreSQL images (e.g. one with PostGIS) Specifying a Pod anti-affinity and Node affinity Enable and/or require TLS for all connections Custom PostgreSQL configurations  and more.</description>
+    </item>
+    
+    <item>
+      <title>Update a Postgres Cluster</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/update-cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/update-cluster/</guid>
+      <description>You&amp;rsquo;ve done it: your application is a huge success! It&amp;rsquo;s so successful that you database needs more resources to keep up with the demand. How do you add more resources to your PostgreSQL cluster?
+The PostgreSQL Operator provides several options to update a cluster&amp;rsquo;s resource utilization, including:
+ Resource allocations (e.g. Memory, CPU, PVC size) Tablespaces Annotations Availability options Configuration  and more. There are additional actions that can be taken as well outside of the update process, including scaling a cluster, adding a pgBouncer or pgAdmin 4 Deployment, and more.</description>
+    </item>
+    
+    <item>
+      <title>Delete a Postgres Cluster</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/delete-cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/delete-cluster/</guid>
+      <description>There are many reasons you may want to delete a PostgreSQL cluster, and a few different questions to consider, such as do you want to permanently delete the data or save it for later use?
+The PostgreSQL Operator offers several different workflows for deleting a cluster, from wiping all assets, to keeping PVCs of your data directory, your backup repository, or both.
+Delete Everything Deleting everything in a PostgreSQL cluster is a simple as using the pgo delete cluster command.</description>
+    </item>
+    
+    <item>
+      <title>Setup TLS</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/tls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/tls/</guid>
+      <description>TLS allows secure TCP connections to PostgreSQL, and the PostgreSQL Operator makes it easy to enable this PostgreSQL feature. The TLS support in the PostgreSQL Operator does not make an opinion about your PKI, but rather loads in your TLS key pair that you wish to use for the PostgreSQL server as well as its corresponding certificate authority (CA) certificate. Both of these Secrets are required to enable TLS support for your PostgreSQL cluster when using the PostgreSQL Operator, but it in turn allows seamless TLS support.</description>
+    </item>
+    
+    <item>
+      <title>pgBouncer</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/pgbouncer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/pgbouncer/</guid>
+      <description>pgBouncer is a lightweight connection poooler and state manager that provides an efficient gateway to metering connections to PostgreSQL. The PostgreSQL Operator provides an integration with pgBouncer that allows you to deploy it alongside your PostgreSQL cluster.
+This tutorial covers how you can set up pgBouncer, functionality that the PostgreSQL Operator provides to manage it, and more.
+Setup pgBouncer pgBouncer lives as an independent Deployment next to your PostgreSQL cluster but, thanks to the PostgreSQL Operator, is synchronized with various aspects of your environment.</description>
+    </item>
+    
+    <item>
+      <title>High Availability</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/high-availability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/high-availability/</guid>
+      <description>One of the great things about PostgreSQL is its reliability: it is very stable and typically &amp;ldquo;just works.&amp;rdquo; However, there are certain things that can happen in the environment that PostgreSQL is deployed in that can affect its uptime, including:
+ The database storage disk fails or some other hardware failure occurs The network on which the database resides becomes unreachable The host operating system becomes unstable and crashes A key database file becomes corrupted A data center is lost  There may also be downtime events that are due to the normal case of operations, such as performing a minor upgrade, security patching of operating system, hardware upgrade, or other maintenance.</description>
+    </item>
+    
+    <item>
+      <title>Disaster Recovery</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/disaster-recovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/disaster-recovery/</guid>
+      <description>When using the PostgreSQL Operator, the answer to the question &amp;ldquo;do you take backups of your database&amp;rdquo; is automatically &amp;ldquo;yes!&amp;rdquo;
+The PostgreSQL Operator leverages a pgBackRest repository to facilitate the usage of the pgBackRest features in a PostgreSQL cluster. When a new PostgreSQL cluster is created, it simultaneously creates a pgBackRest repository as described in creating a PostgreSQL cluster section.
+For more information on how disaster recovery in the PostgreSQL Operator works, please see the disaster recovery architecture section.</description>
+    </item>
+    
+    <item>
+      <title>Logical Backups (pg_dump)</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/pgdump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/tutorial/pgdump/</guid>
+      <description>The PostgreSQL Operator supports taking logical backups with pg_dump and pg_dumpall. While they do not provide the same performance and storage optimizations as the physical backups provided by pgBackRest, logical backups are helpful when one wants to upgrade between major PostgreSQL versions, or provide only a subset of a database, such as a table.
+Create a Logical Backup To create a logical backup of the postgres database, you can run the following command:</description>
+    </item>
+    
+  </channel>
+</rss>

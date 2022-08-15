@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Upgrade on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.6.8/upgrade/</link>
+    <description>Recent content in Upgrade on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.6.8/upgrade/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automated PostgreSQL Operator Upgrade - Operator 4.1&#43;</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/upgrade/automatedupgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/upgrade/automatedupgrade/</guid>
+      <description>Automated PostgreSQL Operator Upgrade Procedure The automated upgrade to a new release of the PostgreSQL Operator comprises two main steps:
+ Upgrading the PostgreSQL Operator itself Upgrading the existing PostgreSQL Clusters to the new release  The first step will result in an upgraded PostgreSQL Operator that is able to create and manage new clusters as expected, but will be unable to manage existing clusters until they have been upgraded.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring Upgrade Guidance</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.6.8/upgrade/metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.6.8/upgrade/metrics/</guid>
+      <description>Upgrade Guidance for PostgreSQL Operator Monitoring Migration to Upstream Containers The Crunchy PostgreSQL Monitoring infrastructure now uses upstream Prometheus and Grafana containers. By default the installers will deploy the monitoring infrastructure using images from Docker Hub but can easily be updated to point to a Red Hat certified container repository. The Red Hat certified image catalog can be found here and the Docker Hub images can be found at the following links:</description>
+    </item>
+    
+  </channel>
+</rss>
