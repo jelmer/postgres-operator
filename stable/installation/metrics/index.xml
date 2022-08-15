@@ -28,7 +28,7 @@ Environment PostgreSQL Operator Monitoring is tested in the following environmen
       
       <guid>https://crunchydata.github.io/postgres-operator/stable/installation/metrics/postgres-operator-metrics/</guid>
       <description>PostgreSQL Operator Monitoring Installer Quickstart If you believe that all the default settings in the installation manifest work for you, you can take a chance by running the metrics manifest directly from the repository:
-kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/metrics/kubectl/postgres-operator-metrics.yml  Note that in OpenShift and CodeReady Containers you will need to set the disable_fsgroup to true attribute to true if you are using the restricted Security Context Constraint (SCC).</description>
+kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.7/installers/metrics/kubectl/postgres-operator-metrics.yml  Note that in OpenShift and CodeReady Containers you will need to set the disable_fsgroup to true attribute to true if you are using the restricted Security Context Constraint (SCC).</description>
     </item>
     
     <item>

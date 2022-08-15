@@ -1139,6 +1139,13 @@
 
       </div>
         <ul>
+      <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/" class="dd-item">
+        <div>
+          <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/">
+            4.7.7
+          </a>
+        </div>
+    </li>
       <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/" class="dd-item">
         <div>
           <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/">
@@ -1490,7 +1497,6 @@
 
 <ul>
 <li>Any regular user that&rsquo;s created through <a href="https://crunchydata.github.io/postgres-operator/stable/pgo-client/reference/pgo_create_user/"><code>pgo create user</code></a> or a user that is not a system account.</li>
-<li>The <code>postgres</code> superuser</li>
 </ul>
 
 <p>The following example will follow similar steps for how you would connect to a <a href="https://crunchydata.github.io/postgres-operator/stable/tutorial/connect-cluster/#connection-via-psql">Postgres Cluster via <code>psql</code></a>, but applies to all other connection methods.</p>
@@ -1520,7 +1526,7 @@ hippo-pgbouncer              ClusterIP   10.96.85.35     &lt;none&gt;        543
 
 <p>You should then be greeted with the PostgreSQL prompt:</p>
 
-<pre><code>psql (13.7)
+<pre><code>psql (13.8)
 Type &quot;help&quot; for help.
 
 hippo=&gt;
@@ -1549,7 +1555,7 @@ hippo   hippo-pgbouncer pgbouncer randompassword           10.96.85.35
 
 <p>You should see something similar to this:</p>
 
-<pre><code>psql (13.7, server 1.14.0/bouncer)
+<pre><code>psql (13.8, server 1.14.0/bouncer)
 Type &quot;help&quot; for help.
 
 pgbouncer=#
@@ -1602,7 +1608,7 @@ pgbouncer=#
 
 <p>You should see something similar to this:</p>
 
-<pre><code>psql (13.7)
+<pre><code>psql (13.8)
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
 Type &quot;help&quot; for help.
 

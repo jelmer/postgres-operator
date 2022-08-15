@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>4.7.7</title>
+      <link>https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/</guid>
+      <description>Crunchy Data announces the release of PGO, the Postgres Operator 4.7.7.
+The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
+PostgreSQL Operator 4.7.7 release includes the following software versions upgrades:
+ PostgreSQL versions 13.8, 12.12, 11.17, and 10.22 are now available. PgBouncer is now at version 1.17. The pg_partman extension is now at version 4.6.0. The TimescaleDB extension is now at version 2.7.1.  </description>
+    </item>
+    
+    <item>
       <title>4.7.6</title>
       <link>https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

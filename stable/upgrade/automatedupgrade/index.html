@@ -1139,6 +1139,13 @@
 
       </div>
         <ul>
+      <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/" class="dd-item">
+        <div>
+          <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/">
+            4.7.7
+          </a>
+        </div>
+    </li>
       <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/" class="dd-item">
         <div>
           <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/">
@@ -1514,7 +1521,7 @@ export EXCLUDE_OS_TRUST=false
 
 <p>Then, for either 4.1.X or 4.2.X,</p>
 
-<p>Update the <code>PGO_VERSION</code> variable to <code>4.7.6</code></p>
+<p>Update the <code>PGO_VERSION</code> variable to <code>4.7.7</code></p>
 
 <p>Finally, source this file with</p>
 
@@ -1567,10 +1574,10 @@ To help ensure that needed resources are not inadvertently deleted during an upg
 
 <p>If you are using the PostGIS-enabled image (i.e. <code>crunchy-postgres-gis-ha</code>) or any other custom images, you will need to add the <code>--ccp-image-tag</code>:</p>
 
-<pre><code>pgo upgrade --ccp-image-tag=ubi8-13.7-3.1-4.7.6 mygiscluster
+<pre><code>pgo upgrade --ccp-image-tag=ubi8-13.8-3.1-4.7.7 mygiscluster
 </code></pre>
 
-<p>Where <code>13.7</code> is the PostgreSQL version, <code>3.1</code> is the PostGIS version and <code>4.7.6</code> is the PostgreSQL Operator version.
+<p>Where <code>13.8</code> is the PostgreSQL version, <code>3.1</code> is the PostGIS version and <code>4.7.7</code> is the PostgreSQL Operator version.
 Please note, no tag validation will be performed and additional steps may be required to upgrade your PostGIS extension implementation. For more information on PostGIS upgrade considerations, please see
 <a href="https://access.crunchydata.com/documentation/postgis/latest/postgis_installation.html#upgrading">PostGIS Upgrade Documentation</a>.</p>
 

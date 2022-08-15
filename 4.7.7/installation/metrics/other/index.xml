@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other Methods on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.7.7/installation/metrics/other/</link>
+    <description>Recent content in Other Methods on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.7.7/installation/metrics/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monitoring Helm Chart</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.7/installation/metrics/other/helm-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.7/installation/metrics/other/helm-metrics/</guid>
+      <description>The PostgreSQL Operator Monitoring Helm Chart Overview The PostgreSQL Operator comes with a container called pgo-deployer which handles a variety of lifecycle actions for the PostgreSQL Operator Monitoring infrastructure, including:
+ Installation Upgrading Uninstallation  After configuring the values.yaml file with you configuration options, the installer will be run using the helm command line tool and takes care of setting up all of the objects required to run the PostgreSQL Operator.</description>
+    </item>
+    
+  </channel>
+</rss>

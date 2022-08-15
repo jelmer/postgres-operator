@@ -29,7 +29,7 @@ Environment PGO is tested in the following environments:
       
       <guid>https://crunchydata.github.io/postgres-operator/stable/installation/postgres-operator/</guid>
       <description>PGO: Postgres Operator Installer Quickstart If you believe that all the default settings in the installation manifest work for you, you can take a chance by running the manifest directly from the repository:
-kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/kubectl/postgres-operator.yml  However, we still advise that you read onward to see how to properly configure the PostgreSQL Operator.
+kubectl create namespace pgo kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.7/installers/kubectl/postgres-operator.yml  However, we still advise that you read onward to see how to properly configure the PostgreSQL Operator.
 Overview PGO comes with a container called pgo-deployer which handles a variety of lifecycle actions for the Postgres Operator, including:</description>
     </item>
     

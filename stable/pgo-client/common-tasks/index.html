@@ -1139,6 +1139,13 @@
 
       </div>
         <ul>
+      <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/" class="dd-item">
+        <div>
+          <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/">
+            4.7.7
+          </a>
+        </div>
+    </li>
       <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/" class="dd-item">
         <div>
           <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/">
@@ -1492,8 +1499,8 @@ command:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pgo version</code></pre></div>
 <p>which, if working, will yield results similar to:</p>
 
-<pre><code>pgo client version 4.7.6
-pgo-apiserver version 4.7.6
+<pre><code>pgo client version 4.7.7
+pgo-apiserver version 4.7.7
 </code></pre>
 
 <h3 id="inspecting-the-postgresql-operator-configuration">Inspecting the PostgreSQL Operator Configuration</h3>
@@ -1509,7 +1516,7 @@ deployed by default, which storage classes are being used, etc.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">BasicAuth<span style="color:#111">:</span> <span style="color:#d88200">&#34;&#34;</span>
 Cluster<span style="color:#111">:</span>
   CCPImagePrefix<span style="color:#111">:</span> crunchydata
-  CCPImageTag<span style="color:#111">:</span> ubi8-13.7-4.7.6
+  CCPImageTag<span style="color:#111">:</span> ubi8-13.8-4.7.7
   Policies<span style="color:#111">:</span> <span style="color:#d88200">&#34;&#34;</span>
   Metrics<span style="color:#111">:</span> <span style="color:#00a8c8">false</span>
   Badger<span style="color:#111">:</span> <span style="color:#00a8c8">false</span>
@@ -1536,7 +1543,7 @@ Cluster<span style="color:#111">:</span>
 Pgo<span style="color:#111">:</span>
   Audit<span style="color:#111">:</span> <span style="color:#00a8c8">false</span>
   PGOImagePrefix<span style="color:#111">:</span> crunchydata
-  PGOImageTag<span style="color:#111">:</span> ubi8-4.7.6
+  PGOImageTag<span style="color:#111">:</span> ubi8-4.7.7
 PrimaryStorage<span style="color:#111">:</span> nfsstorage
 BackupStorage<span style="color:#111">:</span> nfsstorage
 ReplicaStorage<span style="color:#111">:</span> nfsstorage
@@ -1624,10 +1631,10 @@ gibibytes of memory, you can use the following command:</p>
 
 <p>To create a PostgreSQL cluster that uses the geospatial extension PostGIS, you
 can execute the following command, updated with your desired image tag. In the
-example below, the cluster will use PostgreSQL 13.7 and PostGIS 3.1:</p>
+example below, the cluster will use PostgreSQL 13.8 and PostGIS 3.1:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pgo create cluster hagiscluster <span style="color:#8045ff">\
 </span><span style="color:#8045ff"></span>  --ccp-image<span style="color:#f92672">=</span>crunchy-postgres-gis-ha <span style="color:#8045ff">\
-</span><span style="color:#8045ff"></span>  --ccp-image-tag<span style="color:#f92672">=</span>ubi8-13.7-3.1-4.7.6</code></pre></div>
+</span><span style="color:#8045ff"></span>  --ccp-image-tag<span style="color:#f92672">=</span>ubi8-13.8-3.1-4.7.7</code></pre></div>
 <h4 id="create-a-postgresql-cluster-with-a-tablespace">Create a PostgreSQL Cluster with a Tablespace</h4>
 
 <p>Tablespaces are a PostgreSQL feature that allows a user to select specific
@@ -1717,7 +1724,7 @@ including the nodes that the pods are assigned to</li>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pgo show cluster hacluster</code></pre></div>
 <p>which will yield output similar to:</p>
 
-<pre><code>cluster : hacluster (crunchy-postgres-ha:ubi8-13.7-4.7.6)
+<pre><code>cluster : hacluster (crunchy-postgres-ha:ubi8-13.8-4.7.7)
 	pod : hacluster-6dc6cfcfb9-f9knq (Running) on node01 (1/1) (primary)
 	pvc : hacluster
 	resources : CPU Limit= Memory Limit=, CPU Request= Memory Request=
@@ -1725,7 +1732,7 @@ including the nodes that the pods are assigned to</li>
 	deployment : hacluster
 	deployment : hacluster-backrest-shared-repo
 	service : hacluster - ClusterIP (10.102.20.42)
-	labels : archive-timeout=60 deployment-name=hacluster pg-cluster=hacluster crunchy-pgha-scope=hacluster pgo-version=4.7.6 current-primary=hacluster name=hacluster pgouser=admin workflowid=ae714d12-f5d0-4fa9-910f-21944b41dec8
+	labels : archive-timeout=60 deployment-name=hacluster pg-cluster=hacluster crunchy-pgha-scope=hacluster pgo-version=4.7.7 current-primary=hacluster name=hacluster pgouser=admin workflowid=ae714d12-f5d0-4fa9-910f-21944b41dec8
 </code></pre>
 
 <h3 id="deleting-a-cluster">Deleting a Cluster</h3>

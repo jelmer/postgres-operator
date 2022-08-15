@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Using the pgo Client on PGO: PostgreSQL Operator from Crunchy Data Documentation</title>
+    <link>https://crunchydata.github.io/postgres-operator/4.7.7/pgo-client/</link>
+    <description>Recent content in Using the pgo Client on PGO: PostgreSQL Operator from Crunchy Data Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://crunchydata.github.io/postgres-operator/4.7.7/pgo-client/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Common pgo Client Tasks</title>
+      <link>https://crunchydata.github.io/postgres-operator/4.7.7/pgo-client/common-tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://crunchydata.github.io/postgres-operator/4.7.7/pgo-client/common-tasks/</guid>
+      <description>While the full pgo client reference will tell you everything you need to know about how to use pgo, it may be helpful to see several examples on how to conduct &amp;ldquo;day-in-the-life&amp;rdquo; tasks for administrating PostgreSQL cluster with the PostgreSQL Operator.
+The below guide covers many of the common operations that are required when managing PostgreSQL clusters. The guide is broken up by different administrative topics, such as provisioning, high-availability, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

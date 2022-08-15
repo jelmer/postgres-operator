@@ -1140,6 +1140,13 @@
 
       </div>
         <ul>
+      <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/" class="dd-item">
+        <div>
+          <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.7/">
+            4.7.7
+          </a>
+        </div>
+    </li>
       <li data-nav-id="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/" class="dd-item">
         <div>
           <a href="https://crunchydata.github.io/postgres-operator/stable/releases/4.7.6/">
@@ -1454,7 +1461,7 @@ for you, you can take a chance by running the metrics manifest directly from the
 repository:</p>
 
 <pre><code>kubectl create namespace pgo
-kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/metrics/kubectl/postgres-operator-metrics.yml
+kubectl apply -f https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.7/installers/metrics/kubectl/postgres-operator-metrics.yml
 </code></pre>
 
 <p>Note that in OpenShift and CodeReady Containers you will need to set the
@@ -1482,7 +1489,7 @@ including:</p>
 and takes care of setting up all of the objects required to run the PostgreSQL
 Operator.</p>
 
-<p>The installation manifest, called <a href="https://github.com/CrunchyData/postgres-operator/blob/v4.7.6/installers/metrics/kubectl/postgres-operator-metrics.yml"><code>postgres-operator-metrics.yml</code></a>, is available in the <a href="https://github.com/CrunchyData/postgres-operator/blob/v4.7.6/installers/metrics/kubectl/postgres-operator-metrics.yml"><code>installers/metrics/kubectl/postgres-operator-metrics.yml</code></a>
+<p>The installation manifest, called <a href="https://github.com/CrunchyData/postgres-operator/blob/v4.7.7/installers/metrics/kubectl/postgres-operator-metrics.yml"><code>postgres-operator-metrics.yml</code></a>, is available in the <a href="https://github.com/CrunchyData/postgres-operator/blob/v4.7.7/installers/metrics/kubectl/postgres-operator-metrics.yml"><code>installers/metrics/kubectl/postgres-operator-metrics.yml</code></a>
 path in the PostgreSQL Operator repository.</p>
 
 <h2 id="requirements">Requirements</h2>
@@ -1507,10 +1514,10 @@ to create:</p>
 </ul>
 
 <p>The required list of privileges are available in the
-<a href="https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/metrics/kubectl/postgres-operator-metrics.yml">postgres-operator-metrics.yml</a>
+<a href="https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.7/installers/metrics/kubectl/postgres-operator-metrics.yml">postgres-operator-metrics.yml</a>
 file:</p>
 
-<p><a href="https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/kubectl/postgres-operator.yml">https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.6/installers/metrics/kubectl/postgres-operator-metrics.yml</a></p>
+<p><a href="https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.7/installers/kubectl/postgres-operator.yml">https://raw.githubusercontent.com/CrunchyData/postgres-operator/v4.7.7/installers/metrics/kubectl/postgres-operator-metrics.yml</a></p>
 
 <p>If you have already configured the ServiceAccount and ClusterRoleBinding for the
 installation process (e.g. from a previous installation), then you can remove
@@ -1537,7 +1544,7 @@ exists before the job is run</strong>.</p>
 <h2 id="configuration-postgres-operator-metrics-yml">Configuration - <code>postgres-operator-metrics.yml</code></h2>
 
 <p>The <code>postgres-operator-metrics.yml</code> file contains all of the configuration parameters
-for deploying PostgreSQL Operator Monitoring. The <a href="https://github.com/CrunchyData/postgres-operator/blob/v4.7.6/installers/metrics/kubectl/postgres-operator-metrics.yml">example file</a>
+for deploying PostgreSQL Operator Monitoring. The <a href="https://github.com/CrunchyData/postgres-operator/blob/v4.7.7/installers/metrics/kubectl/postgres-operator-metrics.yml">example file</a>
 contains defaults that should work in most Kubernetes environments, but it may
 require some customization.</p>
 
