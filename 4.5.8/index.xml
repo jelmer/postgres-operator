@@ -351,7 +351,7 @@ ansible-playbook -i /path/to/inventory.yaml --tags=uninstall-metrics main.</desc
       <description>Crunchy Data announces the release of PGO, the Postgres Operator 4.5.8.
 The PostgreSQL Operator is released in conjunction with the Crunchy Container Suite.
 PostgreSQL Operator 4.5.8 release includes the following software versions upgrades:
- PostgreSQL versions 13.8, 12.12, 11.17, and 10.22 are now available. PgBouncer is now at version 1.17. The pg_partman extension is now at version 4.6.0. The TimescaleDB extension is now at version 2.7.1.  </description>
+ PostgreSQL versions 13.8, 12.12, 11.17, and 10.22 are now available. PgBouncer is now at version 1.17. The pg_partman extension is now at version 4.6.2. The TimescaleDB extension is now at version 2.7.2.  </description>
     </item>
     
     <item>
