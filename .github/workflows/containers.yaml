@@ -1,0 +1,39 @@
+name: Python package
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * *" # Daily 6AM UTC build
+
+env:
+  REGISTRY: ghcr.io
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@v3
+        with:
+          go-version: '>=1.19.0'
+
+      - name: Log in to the Container registry
+        uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - run: make setup
+      - name: Fetch prerequisites
+        run: |
+          wget https://api.developers.crunchydata.com/downloads/repo/rpm-centos/postgresql13/crunchypg13.repo -O "${{ github.workspace }}/conf/crunchypg13.repo"
+          wget https://api.developers.crunchydata.com/downloads/repo/rpm-centos/postgresql14/crunchypg14.repo -O "${{ github.workspace }}/conf/crunchypg14.repo"
+          wget https://api.developers.crunchydata.com/downloads/gpg/RPM-GPG-KEY-crunchydata-dev -O "${{ github.workspace }}/conf/RPM-GPG-KEY-crunchydata-dev"
+      - name: Build images
+        run: make PGO_BASEOS=rocky9 PGO_IMAGE_PREFIX=ghcr.io/jelmer
+      - run: docker image ls
