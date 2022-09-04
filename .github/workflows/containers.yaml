@@ -36,4 +36,6 @@ jobs:
           wget https://api.developers.crunchydata.com/downloads/gpg/RPM-GPG-KEY-crunchydata-dev -O "${{ github.workspace }}/conf/RPM-GPG-KEY-crunchydata-dev"
       - name: Build images
         run: make PGO_BASEOS=rocky9 PGO_IMAGE_PREFIX=ghcr.io/jelmer
-      - run: docker image ls
+      - run: docker push -a ghcr.io/jelmer/postgres-operator
+      - run: docker push -a ghcr.io/jelmer/pgo-base
+      - run: docker push -a ghcr.io/jelmer/crunchy-postgres-exporter
